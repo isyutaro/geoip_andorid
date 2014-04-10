@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python
 #BUSCARIN  v1.0 
 #codificada por arthas1000 para sl4a 
@@ -33,7 +32,7 @@ def manifesto():
 def solicitud ():
   paginaweb = droid.dialogGetInput('DATOS', 'Escriba la direccion web:', None).result
   #guarda nuestra pagina web 
-  direccion = open('direccion.txt','at+')
+  direccion = open('direccion.txt','wt+')
   direccion.write(paginaweb)
   direccion.close()
   #vibra al terminar 
